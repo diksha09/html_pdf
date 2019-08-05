@@ -1,0 +1,10 @@
+{% for key, val in test.items() %}
+    <tr>
+        <td>{loop.index + 1}</td>
+        <td>{key}</td>
+        {% for tkey, tval in val.iteritems() %}
+            <td>{tkey}</td>
+            <td>{tval}</td>
+        {% endfor %}
+    </tr>
+{% endfor %}
